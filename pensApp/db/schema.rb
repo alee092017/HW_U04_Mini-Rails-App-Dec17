@@ -10,9 +10,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20171212200309) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "pens", force: :cascade do |t|
+    t.string "name"
+    t.string "tip_size"
+    t.string "ink_color"
+    t.string "model_no"
+    t.text "notes"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_pens_on_name"
+  end
+
+  create_table "students", force: :cascade do |t|
+    t.string "name"
+    t.string "dexterity"
+    t.integer "pen_id"
+    t.text "notes"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end

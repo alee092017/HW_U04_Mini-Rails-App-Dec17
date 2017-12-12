@@ -15,5 +15,5 @@ sarasa = Pen.create!(name: 'Sarasa Push Clip Gel Pen', tip_size: '0.5 mm', ink_c
 
 
 #Students
-becky = Student.create!(name: 'Becky', dexterity: 'Left handed')
-joe = Student.create!(name: 'Joe', dexterity: 'Right handed')
+becky = Student.create!(name: 'Becky', dexterity: 'Left handed', pen_id: '1')
+joe = Student.create!(name: 'Joe', dexterity: 'Right handed', pen_id: '2')
