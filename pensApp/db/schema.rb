@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20171212200309) do
     t.string "tip_size"
     t.string "ink_color"
     t.string "model_no"
+    t.string "image_url"
     t.text "notes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
